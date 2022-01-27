@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: 'Upload TrustFrameworkBase Policy'
+    - name: Upload TrustFrameworkBase Policy
       uses: azure-ad-b2c/deploy-trustframework-policy@v3
       with:
         folder: "Policies"
