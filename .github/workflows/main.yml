@@ -14,7 +14,7 @@ jobs:
       uses: azure-ad-b2c/deploy-trustframework-policy@v3
       with:
         folder: "./Policies"
-        files: "PasswordReset.xml"
+        files: "TrustFrameworkBase.xml,TrustFrameworkLocalization.xml,TrustFrameworkExtensions.xml,SignUpOrSignin.xml"
         tenant: ${{ env.tenant }}
         clientId: ${{ env.clientId }}
         clientSecret: ${{ secrets.clientSecret }}
